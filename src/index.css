@@ -1,13 +1,223 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background: #0f0e17;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  color: #a7a9be;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.title {
+  width: 100%;
+  background: #fffffe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e12b13;
+}
+
+.title img {
+  object-fit: cover;
+  width: 7rem;
+  background: transparent;
+  padding: 1rem;
+}
+.underline {
+  width: 8rem;
+  background: #0f0e17;
+  height: 0.2rem;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+.container {
+  width: 100vw;
+  margin: 0 auto;
+}
+.form-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.form-content input {
+  width: 90%;
+  max-width: 40rem;
+}
+.form-content input {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  background: transparent;
+  color: #ff8906;
+  border-bottom: 3px solid #ff8906;
+  outline: none;
+}
+.form-content input::placeholder {
+  color: #f25f4ca8;
+}
+.search-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 1.4rem;
+  background: fffffe;
+  color: #f25f4c;
+  border-bottom: 3px solid #ff8906;
+  outline: none;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+}
+.photos {
+  padding: 5rem 0;
+  width: 90vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.onepic {
+  flex: 1 1 500px;
+}
+.content {
+  gap: 2rem;
+  display: flex;
+  background:#fff;
+  justify-content: center;
+  align-items: center;
+  margin:2rem auto;
+  border-radius: 0.6rem;
+
+}
+.main-pic {
+  height: 30rem;
+  width:100%;
+  position: relative;
+  overflow: hidden;
+}
+.main-pic > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.photo-info {
+  display: flex;
+  flex-wrap: wrap;
+ 
+  align-items: center;
+  justify-content: center;
+}
+
+
+.name h4 {
+  color: #0f0e17;
+  margin-bottom: 0.5rem;
+  font-size:1.4rem
+}
+.name p {
+  margin-bottom: 0;
+  color:#0f0e17;
+  /* padding: 0.5rem; */
+  word-spacing: 0.6rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+.name{
+    margin:0.6rem auto;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.heart {
+  text-align: center;
+  margin: 0 0.6rem 0;
+  color: #f25f4c;
+  font-size: 1.2rem;
+}
+.person-info {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  margin-top:0.5rem;
+
+}
+.person-info img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-bottom:1rem
+}
+.person-info a {
+  color: #0f0e17;
+  font-weight: bold;
+}
+h2 {
+  text-align: center;
+  padding: 3rem;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
 }
